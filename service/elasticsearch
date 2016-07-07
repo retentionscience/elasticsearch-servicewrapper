@@ -88,7 +88,8 @@ WAIT_FOR_STARTED_TIMEOUT=120
 
 # Specify the number of open files ulimit for the above user
 # recommended value: 32000
-#ULIMIT_N=
+ULIMIT_N=65535
+ulimit -n $ULIMIT_N
 
 # By default we show a detailed usage block.  Uncomment to show brief usage.
 #BRIEF_USAGE=true
